@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 export async function connect() {
   try {
-    if (mongoose.connections && mongoose.connections[0].readyState) return;
+    mongoose.connect(process.env.MONGO_URI!);
 
     mongoose.connect(process.env.MONGO_URI!);
     const connection = mongoose.connection;
