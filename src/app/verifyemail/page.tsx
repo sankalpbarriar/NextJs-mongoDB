@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-export default function verifyEmailPage() {
+export default function VerifyEmailPage() {
 
     // const router = useRouter();
         
