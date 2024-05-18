@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
     });
 
     response.cookies.set("token", token, {
-      httpOnly: true, //cookies can now only be manupted by server
+      httpOnly: true,     //cookies can now only be manupted by server
     });
     return response;
   } catch (error: any) {
