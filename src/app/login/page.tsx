@@ -53,7 +53,7 @@ export default function LoginPage() {
                     type="text"
                     value={user.email}
                     onChange={(e) => setUser({ ...user, email: e.target.value })}
-                    placeholder="Email"
+                    placeholder="test@test.com"
                 />
                 <label className="text-black w-full mb-2" htmlFor="password">Password</label>
                 <input
@@ -62,7 +62,7 @@ export default function LoginPage() {
                     type="password"
                     value={user.password}
                     onChange={(e) => setUser({ ...user, password: e.target.value })}
-                    placeholder="Password"
+                    placeholder="123456"
                 />
                 <button
                     className={`p-2 px-5 border border-gray-500 text-black hover:text-white rounded-lg mb-8 focus:outline-none focus:border-gray-600 hover:bg-black duration-300 ${buttonDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}
