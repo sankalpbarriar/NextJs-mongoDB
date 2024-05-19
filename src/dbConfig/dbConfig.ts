@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
-dotenv.config();
+dotenv.config();  //loading .env
 
 export async function connect() {
   try {
@@ -10,7 +10,7 @@ export async function connect() {
       throw new Error('MONGO_URI environment variable not defined');
     }
 
-    console.log('Connecting to MongoDB URI:', uri.split('@')[1]); // Debug: Don't log the full URI in production
+    console.log('Connecting to MongoDB URI:', uri.split('@')[1]);
 
     await mongoose.connect(uri);
     const connection = mongoose.connection;
